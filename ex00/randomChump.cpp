@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/26 14:48:42 by tndreka           #+#    #+#             */
-/*   Updated: 2025/05/26 18:18:11 by tndreka          ###   ########.fr       */
+/*   Created: 2025/05/26 17:57:10 by tndreka           #+#    #+#             */
+/*   Updated: 2025/05/26 18:17:36 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-
-int main(void)
+void randomChump(std:: string name)
 {
-	Zombie *myZombie;
-	Zombie *two;
-	
-	myZombie = new Zombie("Frankenstein");
-	myZombie->announce();
-	two = newZombie("Dracula");
-	two->announce();
-	randomChump("ZoMbIe");
-	delete two;
-	delete myZombie;
-	return(0);
+	Zombie *random;
+	random = newZombie(name);
+	random->announce();
+	delete random;
 }

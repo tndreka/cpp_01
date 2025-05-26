@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 14:43:11 by tndreka           #+#    #+#             */
-/*   Updated: 2025/05/26 17:49:34 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/05/26 18:05:49 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ public:
 };
 
 Zombie *newZombie(std::string name);
-
+void	randomChump(std:: string name);
 #endif
