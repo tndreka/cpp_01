@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 14:43:11 by tndreka           #+#    #+#             */
-/*   Updated: 2025/05/26 15:30:42 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/05/26 17:49:34 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ public:
 	void announce (void);
 };
 
-
+Zombie *newZombie(std::string name);
 
 #endif

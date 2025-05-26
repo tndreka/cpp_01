@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/26 14:48:42 by tndreka           #+#    #+#             */
-/*   Updated: 2025/05/26 17:53:00 by tndreka          ###   ########.fr       */
+/*   Created: 2025/05/26 17:43:56 by tndreka           #+#    #+#             */
+/*   Updated: 2025/05/26 17:49:49 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-
-int main(void)
+Zombie *newZombie(std::string name)
 {
-	Zombie *myZombie;
-	Zombie *second_Zombie;
-	myZombie = new Zombie("Frankenstein");
-	myZombie->announce();
-	second_Zombie = newZombie("Dracula");
-	second_Zombie->announce();
-	delete myZombie;
-	delete second_Zombie;
-	return(0);
+	return new Zombie(name);	
 }
