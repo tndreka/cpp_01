@@ -2,9 +2,9 @@ NAME = Moar_brainz
 
 CPP = c++
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
-SRC =
+SRC = main.cpp Zombie.cpp  zombieHorde.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
