@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 18:22:21 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/14 14:44:14 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/06/14 15:21:58 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ public:
 	void announce (void);
 };
 
-// Zombie* zombieHorde( int N, std::string name );
+Zombie* zombieHorde( int n, std::string name );
 
 #endif
