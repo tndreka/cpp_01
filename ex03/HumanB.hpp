@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 19:28:40 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/23 15:11:12 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/06/23 15:40:14 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ private:
 public:
 	HumanB(std::string name);
 	~HumanB();
-	void setWeapon();
+	void setWeapon(Weapon &obj);
+	void attack();
 };
 
 #endif
