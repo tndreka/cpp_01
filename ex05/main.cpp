@@ -6,8 +6,13 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 19:52:42 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/24 19:54:29 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/06/24 20:46:44 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
+
+int main()
+{
+	return 0;
+}
