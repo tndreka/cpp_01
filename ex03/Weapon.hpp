@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 19:28:37 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/23 15:35:18 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/01 18:15:18 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Weapon
 	Weapon(const std::string& type);
 	~Weapon();
 	const std::string &getType() const;
-	void setType(std::string);
+	void setType(const std::string &newtype);
 };
 
 #endif

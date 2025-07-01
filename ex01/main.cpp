@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 18:22:14 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/14 15:24:53 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/01 17:56:20 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ int main(void)
 	// 	delete x_zombies[i];
 	// }
 	x_zombies = zombieHorde(7, "D R A C U L A ");
-	
+	delete[] x_zombies;
 	return 0;
 }

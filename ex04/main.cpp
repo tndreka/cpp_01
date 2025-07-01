@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 15:52:47 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/24 17:56:57 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/01 18:35:15 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,26 @@
 
 int main(int ac, char *av[])
 {
-	// (void)av;
 	std::string line;
 	if (ac == 4)
 	{
+		if(strlen(av[2]) == 0)
+		{
+			std::cout << "Error: string search can not be empty\n";
+		}
 		std::ifstream inputFile(av[1]);
 		if(inputFile.is_open())
 		{
-			std::cout << " file was opened \n";
 			std::string content;
+			bool first_line = true;
 			while (std::getline(inputFile, line))
 			{
-				content = content + line + "\n";
+				if (!first_line)
+					content += "\n";
+				content = content + line;
+				first_line = false;
 			}
-			std::cout << content << std::endl << std::endl;// prints the content of the text.txt file after the read
+			std::cout << content << std::endl << std::endl;
 			size_t pos = 0;
 			size_t last_pos = 0;
 			std::string result;
@@ -48,16 +54,17 @@ int main(int ac, char *av[])
 				outputFile << result;
 				outputFile.close();
 			}
-			// std::cout << result ;
 		}
 		else
 		{
 			std::cout << "Error: test.txt file was NOT opened \n";
 			return 1;
 		}
-		std::cout << "\n success ! ! !\n";
 	}
 	else
+	{
 		std::cout << "F A I L E D  ! ! !\n";
+		return 1;
+	}
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 18:09:19 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/16 18:52:01 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/01 18:05:50 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,24 +28,24 @@ int main()
 	//Main string brain
 	std::string brain = "HI THIS IS BRAIN";
 	//string pointer to brain
-	std::string *ptr = &brain;
+	std::string *stringPTR = &brain;
 	//string refto brain
-	std::string &ref = brain;
+	std::string &stringREF = brain;
 
 	//Print Memory adresses
 	// 1) STRING
 	std::cout<< "Memory address of the main string: " << &brain <<"\n";
 	// 2) POINTER
-	std::cout<< "Memory address of the string pointer: " << ptr <<"\n";
+	std::cout<< "Memory address of the string pointer: " << stringPTR <<"\n";
 	// 3) REF
-	std::cout<< "Memory address of the string ref: " << &ref <<"\n";
+	std::cout<< "Memory address of the string ref: " << &stringREF <<"\n";
 	
 	//Print Value
 	// 1) STRING
 	std::cout<< "The value of the string: " << brain <<"\n";
 	// 2) POINTER
-	std::cout<< "The value of the pointer: " << *ptr <<"\n";
+	std::cout<< "The value of the pointer: " << *stringPTR <<"\n";
 	// 3) REFERENCE
-	std::cout<< "The value of the ref: " << ref <<"\n";
+	std::cout<< "The value of the ref: " << stringREF<<"\n";
 	return 0;
 }

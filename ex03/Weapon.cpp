@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 19:28:34 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/23 15:37:06 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/01 18:15:33 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ const std::string& Weapon::getType()const
 	return type;
 }
 
-void Weapon::setType(std::string newType)
+void Weapon::setType(const std::string &newType)
 {
 	type = newType;
 }

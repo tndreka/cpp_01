@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 19:52:36 by tndreka           #+#    #+#             */
-/*   Updated: 2025/06/25 14:07:24 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/01 18:44:33 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,5 @@ void	Harl::complain(std::string level)
 		}
 		i++;
 	}
-	
+	std::cout <<"Invalid complaint level: "<< level << std::endl;
 }
